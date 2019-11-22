@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        
+        <title>Calculator</title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="piano.css">
+        
+        <script>
+            
+            function calc()
+            {
+                var n1 = parseFloat(document.getElementById('n1').value);
+                var n2 = parseFloat(document.getElementById('n2').value);
+                
+                var oper = document.getElementById('operators').value;
+                
+                if(oper === '+')
+                {
+                    document.getElementById('result').value = n1+n2;
+                }
+                
+                if(oper === '-')
+                {
+                    document.getElementById('result').value = n1-n2;
+                }
+                
+                if(oper === '/')
+                {
+                    document.getElementById('result').value = n1/n2;
+                }
+                
+                if(oper === 'X')
+                {
+                    document.getElementById('result').value = n1*n2;
+                }
+            }
+            
+        </script>
+        
+    </head>
+    <body>
+        <div id="content">
+             <h1 id="title">calculer </h1>  
+        
+        <input type="text" id="n1" placeholder="Number"/><br/><br/>
+        <input type="text" id="n2" placeholder="Number"/><br/><br/>
+        
+        <select id="operators">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="/">/</option>
+            <option value="X">X</option>
+        </select>
+        
+        <button onclick="calc();">=</button>
+        <input type="text" id="result" placeholder="Result"/>
+    </div>
+        
+    </body>
+</html>

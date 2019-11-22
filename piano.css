@@ -1,0 +1,30 @@
+ @import url('https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap');
+
+
+#content {
+  border: 2px solid black;
+  margin: 10px;
+  width: 400px;
+  height: 400px;
+  margin: 15%;
+  background: linear-gradient(#11EFDC, #424B78) ;
+}
+
+#n1{
+	margin-left: 90px;
+	margin-top: 50px;
+}
+
+#n2{
+	margin-left: 90px;
+	margin-top: 2px;
+}
+
+#operators{
+	margin-left: 25px;
+}
+
+#title{
+	margin-left: 90px;
+	font-family: 'Poppins', sans-serif;
+}
